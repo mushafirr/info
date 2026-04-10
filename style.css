@@ -1,10 +1,9 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: black;
-    color: #ffd700;
     text-align: center;
-    transition: background 2s ease;
+    color: white;
+    transition: background 1s linear;
 }
 
 .container {
@@ -17,12 +16,7 @@ body {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: 3px solid #ffd700;
-    box-shadow: 0 0 20px #ffd700;
-}
-
-.profile h2 {
-    margin-top: 10px;
+    border: 3px solid rgba(255,255,255,0.5);
 }
 
 .bio {
@@ -30,30 +24,29 @@ body {
     opacity: 0.8;
 }
 
-.links {
-    margin-top: 20px;
-}
-
+/* glass effect */
 .links a {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 12px;
-    background: #111;
-    margin: 10px 0;
+    justify-content: flex-start;
+    margin: 12px 0;
     padding: 14px;
-    border-radius: 12px;
+    border-radius: 15px;
     text-decoration: none;
-    color: #ffd700;
+    color: white;
     font-weight: bold;
+
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+
     transition: 0.3s;
-    border: 1px solid #ffd70033;
 }
 
 .links a:hover {
-    background: #ffd700;
-    color: black;
-    transform: translateY(-3px) scale(1.03);
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.25);
 }
 
 .links i {
@@ -61,7 +54,6 @@ body {
 }
 
 footer {
-    margin-top: 25px;
-    font-size: 14px;
-    opacity: 0.7;
+    margin-top: 20px;
+    opacity: 0.8;
 }
