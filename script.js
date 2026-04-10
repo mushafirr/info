@@ -1,8 +1,10 @@
 const colors = [
-    "#000000",
-    "#1a1a00",
-    "#111100",
-    "#222200"
+    "#ff6b6b",
+    "#feca57",
+    "#48dbfb",
+    "#1dd1a1",
+    "#5f27cd",
+    "#ff9ff3"
 ];
 
 let i = 0;
@@ -10,9 +12,9 @@ let i = 0;
 setInterval(() => {
     document.body.style.background = colors[i];
     i = (i + 1) % colors.length;
-}, 3000);
+}, 1000);
 
-// click animation
+// click effect
 document.querySelectorAll(".links a").forEach(link => {
     link.addEventListener("click", () => {
         link.style.transform = "scale(0.95)";
